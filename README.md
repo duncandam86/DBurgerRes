@@ -14,6 +14,7 @@ In this assignment, we created a burger logger with MySQL, Node, Express, Handle
 * Node JS
 * Express
 * Handlebars
+* ORM
 * Heroku
 * MVC design pattern
 * MySQL
