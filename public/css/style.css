@@ -1,0 +1,74 @@
+html {
+    background-color:grey;
+}
+
+body {
+    width: 75%;
+    margin: 0 auto; 
+    display: flex;
+    background-color: white;
+}
+
+
+h1 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif, cursive;
+    font-size: 65px;
+    margin: 50px;
+}
+
+.burgerAvailable {
+    font-family: 'Times New Roman', Times, serif, cursive;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 25px;
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    background-color:  lightblue;
+    border: none;
+}
+
+
+.burgerEaten {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 25px;
+    margin: 10px;
+    padding: 10px;
+    background-color:lightsalmon;
+    width: 100%;
+}
+
+h4 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif, cursive;
+    font-size: 30px;
+    margin-left: 10px;
+    color: seagreen
+}
+
+.formContainer {
+    background-color: orange;
+}
+
+#burger{
+    text-align: center;
+    color: blue
+}
+
+#devouredburger{
+    text-align: center;
+    color: red
+
+}
+
+#addBurgerForm{
+    margin-left: 300px;
+    margin-bottom: 10px
+}
+
+#inputName{
+    border-color:  green
+}

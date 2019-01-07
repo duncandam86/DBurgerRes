@@ -1,45 +1,48 @@
-<h1>Duncan's Burger Restaurant!</h1>
+<div class="container">
+  <h1>Eat-Da-Burger!</h1>
+  <div class="row">
+    <div class="col-6">
+      <h3 id='burger'> Available Burgers</h3>
+      {{#each burgers}}
+      {{#unless this.devoured}}
 
-<main>
-  <div class="container">
-    <div class="row">
+      <div>
+        <form action="/burgers/{{this.id}}?_method=PUT" method="POST">
+          <button type="submit" class='burgerAvailable'> {{this.burger_name}}</button>
+        </form>
+      </div>
+      {{/unless}}
+      {{/each}}
+    </div>
 
-      <div class="col-md">
-        <h2>List of Burger</h2>
-        {{#each burgers}}
+    <div class="col s6">
+      <h3 id='devouredburger'> Devoured Burgers</h3>
+
+      {{#each burgers}}
+      {{#if this.devoured}}
+      <div class='burgerEaten'>
         <div>
-          <form action="/burgers/{{this.id}}?_method=PUT" method="POST">
-            <button type="submit" class='burgerAvailable'> {{this.burger_name}}</button>
-          </form>
+          {{this.burger_name}}
         </div>
-        {{/each}}
       </div>
-
-      <div class="col-md">
-        <h2>Eaten Burger</h2>
-        {{#each burgers}}
-        {{#if this.devoured}}
-        <div class='burgerEaten'>
-          <div>
-            {{this.burger_name}}
-          </div>
-        </div>
-        {{/if}}
-        {{/each}}
-      </div>
-
+      {{/if}}
+      {{/each}}
     </div>
   </div>
-</main>
-<br>
-
-<h2>Add A Burger Option</h2>
-
-<div class="row">
-  <div class="col s12">
-    <form action="/burgers" method="POST">
-      <input type="text" id="name" name="burger_name" placeholder="Uber Delicious Burger">
-      <button type="submit" class="addBurgerButton">Add The Burger</button>
+  <br>
+  <h4>Add A Burger</h4>
+  <div class="row">
+    <form action="/burgers" method="POST" id="addBurgerForm">
+      <div class="form-row">
+        <div class="col-8">
+          <input type="text" id="inputName" name="burger_name" placeholder="Add Delicious Burger">
+        </div>
+        <div class="col-4">
+          <button type="button" id="addBurger" class="btn btn-success">Add Burger</button>
+        </div>
+      </div>
     </form>
   </div>
+
 </div>
+<br>
