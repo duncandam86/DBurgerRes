@@ -6,7 +6,7 @@ In this assignment, we created a burger logger with MySQL, Node, Express, Handle
 
 ## Links
 * *Github: https://github.com/duncandam86/DBurgerRes*
-* *Heroku:*
+* *Heroku: https://dburgerrestaurant.herokuapp.com/*
 
 ## Technical Requirements
 * Javascript
