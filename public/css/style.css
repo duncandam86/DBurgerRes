@@ -4,13 +4,13 @@ body {
 
 h1 {
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif, cursive;
+    font-family: 'Rubik', sans-serif;
     font-size: 65px;
     margin: 50px;
 }
 
 .burgerAvailable {
-    font-family: 'Times New Roman', Times, serif, cursive;
+    font-family: 'Rubik', sans-serif;
     font-size: 20px;
     text-align: center;
     border-radius: 25px;
@@ -23,7 +23,7 @@ h1 {
 
 
 .burgerEaten {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Rubik', sans-serif;
     font-size: 20px;
     text-align: center;
     border-radius: 25px;
@@ -35,7 +35,7 @@ h1 {
 
 h4 {
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif, cursive;
+    font-family: 'Rubik', sans-serif;
     font-size: 30px;
     margin-left: 10px;
 }
@@ -56,14 +56,30 @@ h4 {
 }
 
 #addBurgerForm{
-    margin-left: 300px;
+    margin-left: 35%;
     margin-bottom: 10px
 }
 
 #inputName{
-    border-color:  green
+    border-radius: 5px
 }
 
 #addAburger{
-    margin-left: 400px
+    margin-left: 40%
+}
+
+footer {
+    width: 100%;
+    line-height: 1;
+    padding: 10px 0;
+    background-color: grey;
+    font-family: 'Baloo Thambi', cursive;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    margin: auto auto 0 auto;
+}
+
+#imageFooter{
+    max-width: 3%;
 }
